@@ -5,132 +5,178 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080808">
 <title>PLAY BOY | MUKESH SHARMA</title>
+
 <style>
 *{box-sizing:border-box}
 body{
-  margin:0;background:#080808;color:#fff;
-  font-family:Arial,Helvetica,sans-serif;
-  display:flex;justify-content:center;
+  margin:0;
   padding:12px 10px;
+  background:#080808;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  display:flex;
+  justify-content:center;
 }
 .page{
-  width:100%;max-width:390px;text-align:center;
-  padding:18px 14px;border:2px solid #ff202b;
+  width:100%;
+  max-width:390px;
+  text-align:center;
+  padding:20px 14px;
+  border:2px solid #ff2337;
   border-radius:20px;
-  box-shadow:0 0 15px #ff172b, inset 0 0 18px #3b0006;
-  background:radial-gradient(ellipse at top,#35080c,#080808 58%);
-  overflow:hidden;
+  background:radial-gradient(ellipse at top,#36050d,#080808 65%);
+  box-shadow:0 0 15px #ff1730,inset 0 0 15px #350007;
 }
 .logo{
-  width:108px;height:108px;border-radius:50%;
-  object-fit:cover;border:3px solid #ff2535;
-  box-shadow:0 0 16px #ff172b;margin:0 auto 12px;
+  width:105px;
+  height:105px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #ff2337;
+  box-shadow:0 0 16px #ff1730;
+  margin:5px auto 12px;
   animation:float 3s ease-in-out infinite;
 }
 @keyframes float{
   0%,100%{transform:translateY(0)}
   50%{transform:translateY(-5px)}
 }
-.tag{font-size:11px;color:#ff6b74;letter-spacing:3px}
-h1{
-  margin:8px 0 4px;font-size:37px;font-weight:900;
-  font-style:italic;letter-spacing:1px;
-  text-shadow:0 0 12px #ff1829;
+.tag{
+  font-size:11px;
+  letter-spacing:2px;
+  color:#ff727d;
 }
-h1 span{color:#ff2535}
+h1{
+  font-size:39px;
+  margin:10px 0;
+  font-weight:900;
+}
+h1 span{color:#ff2337}
 .channel{
-  display:inline-block;border:1px solid #ff2635;
-  border-radius:30px;padding:7px 17px;
-  font-size:12px;letter-spacing:2px;
+  display:inline-block;
+  border:1px solid #ff2337;
+  border-radius:30px;
+  padding:7px 17px;
+  font-size:12px;
+  letter-spacing:2px;
 }
 .name{
-  margin:15px 0 12px;padding:10px 4px;
-  background:linear-gradient(90deg,#500007,#f01828,#500007);
-  border-radius:7px;font-size:21px;font-weight:900;
+  margin:17px 0 12px;
+  padding:12px 3px;
+  border-radius:7px;
+  background:linear-gradient(90deg,#56000b,#f01b31,#56000b);
+  font-size:21px;
+  font-weight:900;
 }
-.features{
-  display:grid;grid-template-columns:repeat(2,1fr);
-  gap:8px;margin:15px 0;
+.message{
+  font-size:13px;
+  line-height:1.7;
+  color:#ddd;
+  margin:12px 0;
 }
-.feature{
-  border:1px solid #9f1622;border-radius:10px;
-  padding:12px 5px;font-size:12px;font-weight:bold;
-  background:#12090a;
-}
-.feature b{display:block;color:#ff303e;font-size:21px;margin-bottom:5px}
 .join{
-  display:block;margin:17px 0 12px;padding:16px 8px;
-  border-radius:40px;background:#ed1728;color:white;
-  border:2px solid #ff6b74;
-  box-shadow:0 0 16px #ff172b;
-  text-decoration:none;font-size:18px;font-weight:900;
+  display:block;
+  margin:18px 0 15px;
+  padding:16px 6px;
+  border-radius:40px;
+  background:#ed172c;
+  color:#fff;
+  border:2px solid #ff6878;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:900;
+  box-shadow:0 0 15px #ff1730;
   animation:glow 1.8s infinite;
 }
 @keyframes glow{
-  0%,100%{box-shadow:0 0 8px #ff172b}
-  50%{box-shadow:0 0 22px #ff172b}
+  0%,100%{box-shadow:0 0 8px #ff1730}
+  50%{box-shadow:0 0 23px #ff1730}
 }
-.timer{
-  display:inline-block;border:1px solid #ff2635;
-  border-radius:25px;padding:8px 14px;
-  font-size:12px;margin:2px 0 12px;
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
 }
-.timer strong{color:#ff3543;font-size:17px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.stat{
-  padding:11px 4px;border:1px solid #a91b27;
-  border-radius:9px;font-size:11px;color:#ddd;
+.feature{
+  border:1px solid #a91b2c;
+  border-radius:10px;
+  padding:13px 4px;
+  background:#13090b;
+  font-size:12px;
+  color:#eee;
 }
-.stat b{display:block;color:#ff303e;font-size:20px}
-.disclaimer{
-  margin-top:15px;color:#aaa;font-size:10px;
-  line-height:1.6;border-top:1px solid #482025;
-  padding-top:11px;
+.feature b{
+  display:block;
+  font-size:21px;
+  color:#ff3348;
+  margin-bottom:5px;
 }
-.bottom{font-size:11px;color:#ff555f;margin-top:12px}
+.footer{
+  margin-top:16px;
+  padding-top:12px;
+  border-top:1px solid #54202a;
+  color:#aaa;
+  font-size:10px;
+  line-height:1.6;
+}
 </style>
 </head>
+
 <body>
 <main class="page">
-  <div class="tag">WELCOME TO OUR TELEGRAM</div>
 
-  <img src="logo.jpg" class="logo" alt="Channel Logo"
+  <div class="tag">WELCOME TO OUR CHANNEL</div>
+
+  <img src="logo.jpg"
+       class="logo"
+       alt="Play Boy Logo"
        onerror="this.style.display='none'">
 
   <h1>PLAY <span>BOY</span></h1>
+
   <div class="channel">TELEGRAM CHANNEL</div>
 
   <div class="name">MUKESH SHARMA</div>
 
-  <div class="tag">CRICKET UPDATES • MATCH ANALYSIS</div>
+  <div class="message">
+    Welcome to our Telegram community.<br>
+    Join us and stay connected.
+  </div>
 
   <a class="join"
      href="https://t.me/+JkRq8iNDGZBlMDhl"
-     target="_blank" rel="noopener">
-     ✈ JOIN TELEGRAM NOW
+     target="_blank"
+     rel="noopener">
+    ✈ JOIN TELEGRAM NOW
   </a>
 
-  <div class="timer">YOUR CRICKET COMMUNITY</div>
-
-  <div class="stats">
-    <div class="stat"><b>LIVE</b>Match Updates</div>
-    <div class="stat"><b>DAILY</b>Cricket News</div>
-  </div>
-
   <div class="features">
-    <div class="feature"><b>01</b>Match Updates</div>
-    <div class="feature"><b>02</b>Expert Analysis</div>
-    <div class="feature"><b>03</b>Team News</div>
-    <div class="feature"><b>04</b>Cricket Community</div>
+    <div class="feature">
+      <b>✦</b>
+      Exclusive Content
+    </div>
+
+    <div class="feature">
+      <b>♡</b>
+      Community Updates
+    </div>
+
+    <div class="feature">
+      <b>✧</b>
+      Latest Posts
+    </div>
+
+    <div class="feature">
+      <b>➤</b>
+      Join Our Channel
+    </div>
   </div>
 
-  <div class="disclaimer">
-    This channel shares cricket updates, analysis, and
-    general information for fans. No outcomes are guaranteed.
-    Please verify information independently and act responsibly.
+  <div class="footer">
+    Welcome to the PLAY BOY Telegram channel.<br>
+    Please use Telegram responsibly.
   </div>
 
-  <div class="bottom">PLAY SMART • STAY AHEAD</div>
 </main>
 </body>
 </html>
